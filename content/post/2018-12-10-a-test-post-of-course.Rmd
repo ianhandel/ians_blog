@@ -1,0 +1,19 @@
+---
+title: A test post, of course.
+author: Ian
+date: '2018-12-10'
+slug: a-test-post-of-course
+categories: []
+tags: []
+showDate: no
+---
+
+```{r}
+library(ggplot2)
+
+ggplot(mpg) +
+  aes(x = displ, y = hwy) +
+  geom_point() +
+  facet_wrap(~drv)
+```
+
